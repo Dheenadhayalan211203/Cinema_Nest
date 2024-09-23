@@ -1,6 +1,8 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import './Allevents.css'
+import Header from "../Header";
+
 
 const Allevents = () => {
   const [events, setEvents] = useState([]);
@@ -20,7 +22,10 @@ const Allevents = () => {
   }, []);
 
   return (
+     
     <>
+    <Header/>
+    <br></br>
        <section className="container">
        <div className="eventcard">
         {events.map((data) => (

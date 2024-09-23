@@ -1,0 +1,71 @@
+.containerhead{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    height: 100px;
+    background-color: white;
+}
+.searchbar
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   
+}
+.searchbar input{
+    height: 40px;
+    width: 500px;
+    border-radius: 20px;
+    border-style:solid;
+    border: 1px solid black;
+    padding: 5px;
+}
+.searchbar button
+{
+    height: 40px;
+     margin: 10px;
+      cursor: pointer;
+      background-color: rgb(150, 6, 6);
+      border: 0px;
+      border-radius: 20px;
+      color: white;
+}
+.searchbar button:hover
+{
+    background-color: rgb(177, 27, 27);
+}
+.accounts
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 10px;
+     
+}
+.accounts button
+{
+    height: 30px;
+    cursor: pointer;
+    background-color: rgb(152, 152, 11);
+    border: 0px;
+      border-radius: 20px;
+      color: white;
+
+}
+
+.logo 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin: 10px;
+     
+}
+.logo  img
+{
+    height: 50px;
+    width: 50px;
+    border-radius: 5px;
+}
