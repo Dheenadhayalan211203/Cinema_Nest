@@ -22,6 +22,7 @@ const Header=()=>
                  <button type='submit'>Login</button>
             </div>
         </section>
+         <hr />
         </>
      )
 }

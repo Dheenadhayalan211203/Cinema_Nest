@@ -1,24 +1,77 @@
 .evcards
 {
-    border: 1px solid white;
-    padding: 10px;
+    
+    
     border-radius: 20px;
     background-color: rgb(255, 255, 255);
     color: black;
+    width: 200px;
+    padding: 20px;
+    
+
+    
 }
 .evcards img{
     height: 100px;
     width: 100px;
     border-radius: 10px;
+    padding: 0px;
+    margin: 0px;
+    width: 200px;
+    height: 300px;
 }
 .eventcard
 {
     display: flex;
-     flex-wrap: wrap;
-    gap: 30px;
+     
+     justify-content: center;
+     overflow-x: scroll;
+       scroll-behavior: smooth;
+        
+        
+      
+    
+    
 
 }
-.container
+
+.eventcard::-webkit-scrollbar {
+    display: none;
+  }
+.container-alleve
 {
-    margin: 10px;
+     
+     
+    background-color: white;
+    margin: 5px;
+     
+}
+
+.container-alleve h3{
+    font-size: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: start;
+}
+
+.evcards h2
+{
+   display: flex;
+   font-size: 15px;
+}
+
+.book
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    background-color: rgb(3, 4, 78);
+    color: white;
+}
+
+.book:hover
+{
+    background-color: rgb(2, 4, 143);
+    border-radius: 5px;
 }

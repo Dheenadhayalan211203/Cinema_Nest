@@ -1,0 +1,61 @@
+.container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: row;
+    font-size: 10px;
+     
+}
+
+.livwwhole
+{
+    background-color: rgb(22, 21, 21);
+    padding: 20px;
+}
+
+.livhead
+{
+    display: flex;
+    justify-content: start;
+    color: white;
+}
+
+.event-card img
+{
+   height: 100px;
+   border-radius: 10px;
+    
+}
+
+.event-card
+{
+    background-color: rgb(49, 8, 123);
+    display: flex;
+    padding: 20px;
+    gap: 10px;
+    margin: 10px;
+    border-radius: 10px;
+     
+}
+
+.info h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+     font-size: 20px;
+}
+
+.info
+{
+    color: white;
+}
+
+.image
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

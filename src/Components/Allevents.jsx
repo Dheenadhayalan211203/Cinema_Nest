@@ -13,6 +13,8 @@ const Allevents = () => {
         const response = await axios.get("https://cinenest-server.onrender.com/all-events");
         setEvents(response.data);
         console.log(response.data);
+         const eve=response.data.filter(e=>e.category==='movie')
+         setEvents(eve)
       } catch (e) {
         console.log("Error in fetching the events: " + e);
       }
@@ -25,17 +27,21 @@ const Allevents = () => {
      
     <>
     <Header/>
-    <br></br>
-       <section className="container">
+     
+       <section className="container-alleve">
+        <h3>Recently Released</h3>
        <div className="eventcard">
         {events.map((data) => (
-          <div  className="evcards" key={data._id}> {/* Wrap in a parent div */}
+          <div  className="evcards" key={data._id}>  
             <img src={data.image} alt={data.title}   />
+            <div className="rating">
+              <p>{data.rating}</p>
+            </div>
             <h2>{data.title}</h2>
-            <p><i> {data.description}</i></p>
-            <p> <span style={{color:'red'}}> <b>Show time</b></span> {data.time}</p>
-            
-             <button>Book</button>
+
+            <div className="book">
+              <h2>Book Ticket</h2>
+            </div>
 
           </div>
         ))}
